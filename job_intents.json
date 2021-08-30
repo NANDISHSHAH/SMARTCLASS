@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Hey", "Ekse", "Hi"],
+     "responses": ["Hi stranger", "yes, how can I help", "Ey watsupp", "Ekse Hoezit", "Hola", "Hey dude", "You again"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye"],
+     "responses": ["See you!", "Have a nice day", "Sure Bye", "Later dude", "Sayoonara", "Peace out", "Sure dude", "Ciao"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure dude"]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"]
+     },
+     {"tag": "name",
+      "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Tell me about yourself", "You are"],
+      "responses": ["I am Smartclass. How can I help", "My name is Smartclass", "I am Smartclass, my friends call me Smaheartly", "Smartclass is my name"]
+      },
+      {"tag": "services",
+       "patterns": ["What do you do", "How can you help", "What do you know", "What is your purpose", "How can you help","What do you know about textools"],
+       "responses": ["we provide a summary of the chapters  from live class", "Customer support services","Video Summarization of the video"]
+      },
+     {"tag": "Developer",
+      "patterns": ["Who is developer", "What can you tell me about Smart-Class developer", "What about smartclass", "Tell me more about Smart-Class developer", "What can you tell me about textools developer", "Tell me about textools", "What about texttools", "What do you know about textools", "Tell me more about texttools"],
+      "responses": ["Developing team is called codebuddy","codebuddy we are techie people"]
+      },
+      {"tag": "CustomerSupport",
+        "patterns": ["How to use the engaging customer support chat ?"],
+        "responses": ["Services->chatbot"]
+        },
+        {"tag": "ClassSummary",
+          "patterns": ["How to use the class summary  ?"],
+          "responses": ["Services->Class summary"]
+          },
+          {"tag": "feedback",
+            "patterns": ["How to go to feedback ?"],
+            "responses": ["Services->feedback"]
+            }
+
+  ]
+}

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Behavioral Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="/static/assets/css1/style.css">
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		  align-items: center;
+		}
+		
+		/* Float four columns side by side */
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding: 0 5px;
+		  align-items: center;
+		}
+		
+		.row {
+			margin: 0 105px;
+		align-self: center;
+		align-items: center;
+	
+
+
+  	
+	margin: auto;
+	}
+		
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		  align-items: center;
+		}
+		
+		/* Responsive columns */
+		@media screen and (max-width: 600px) {
+		  .column {
+			align-self:center;
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+		  }
+		}
+		
+		/* Style the counter cards */
+		.card {
+			
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        align-items: center;
+		padding: 20px;
+	
+		  text-align: center;
+		  background-color: #444;
+		  color: white;
+		  align-self: center;
+		}
+		
+		.fa {font-size:50px;}
+		</style>
+	</head>
+	<body>
+		<header id="header" class="header fixed-top">
+			<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+		
+			  <a href="/" class="logo d-flex align-items-center">
+				<img src="/static/assets/img/logo.png" alt="">
+				<!-- <span>SMARTCLASS</span> -->
+			  </a>
+		
+		
+			</div>
+		  </header><!-- End Header -->
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Load off all your burdens here.</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+							<div class="col-lg-8 mb-5">
+								<div class="row">
+								
+									
+									
+								</div>
+							</div>
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+									<div id="form-message-warning" class="mb-4 w-100 text-center"></div> 
+				      		<div id="form-message-success" class="mb-4 w-100 text-center">
+				            Your feedback was sent, thank you!
+				      		</div>
+									<form method="POST" action="/feedback" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<!-- <div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div> -->
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="text" class="form-control" name="id" id="id" placeholder="lecture id">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="feedbacks" id="subject" placeholder="Enter feedback">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send feedback" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<center>	
+		<div class="row justify-content-center">
+		<div class="column justify-content-center">
+		  <div class="card justify-content-center">
+			
+			<p><i class="fa fa-thumbs-o-up"></i></p>
+			<h3>{{count}}</h3>
+			<p>POSITIVE FEEDBACKS</p>
+		  </div>
+		</div>
+	  
+		<div class="column">
+		  <div class="card">
+			<p><i class="fa fa-thumbs-o-down"></i></p>
+			<h3>{{count2}}</h3>
+			<p>NEGATIVE FEEDBACKS</p>
+		  </div>
+		</div>
+	</center>
+
+		
+	  </div>
+</section>
+	</body>
+</html>
+

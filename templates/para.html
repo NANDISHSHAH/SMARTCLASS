@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="/static/assets/css1/style.css">
+    <style>
+    body {
+        background-color:#B64BE1;
+      }
+    </style>
+    <body>
+      <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      
+          <a href="/video" class="logo d-flex align-items-center">
+          <img src="/static/assets/img/logo.png" alt="">
+          <!-- <span>SMARTCLASS</span> -->
+          </a>
+      
+      
+        </div>
+        </header><!-- End Header -->
+        <br><br>
+        <div class="card">
+           <center> <div class="card-header">
+              Transcript.
+            </div></center>
+            <div class="card-body">
+                <ul>
+                    {% for t in transc %}
+                
+                    <li> {{ t }}</li>
+                
+                    {% endfor %}
+                </ul>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class="card">
+           <center> <div class="card-header">
+              Summary.
+            </div></center>
+            <div class="card-body">
+                <ul>
+                    {% for h in summ %}
+                
+                    <li> {{ h }}</li>
+                
+                    {% endfor %}
+                </ul>
+
+            </div>
+          </div>
+        
+
+    </body>
+</head>
+</html>

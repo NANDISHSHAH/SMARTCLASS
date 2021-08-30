@@ -1,0 +1,122 @@
+<html><!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+
+        <link href="/static/assets/scss1/style.css" rel="stylesheet">
+        <link href="/static/assets/css/style.css" rel="stylesheet">
+
+        </head>
+
+        <body>
+            <header id="header" class="header fixed-top">
+                <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            
+                  <a href="/" class="logo d-flex align-items-center">
+                    <img src="/static/assets/img/logo.png" alt="">
+                    <!-- <span>SMARTCLASS</span> -->
+                  </a>
+            
+                  
+            
+                </div>
+              </header><!-- End Header -->
+
+              <center><h2>Lectures Section.</h2></center>
+              <br>
+              <center><h3>Choose from below to summarize</h3></center>
+
+            <br><br><br><br><br> 
+
+
+            <div class="section_our_solution">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="our_solution_category">
+                      <div class="solution_cards_box">
+                        <div class="solution_card">
+                          <div class="hover_color_bubble"></div>
+                          <div class="solu_description">
+                            <P>Lecture id: 01</P>
+                            <video controls autoplay width="300" height="150">
+                                <source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4" >
+                              </video>
+
+                              <br><br>
+                              <form action="/trans" method="POST" enctype="multipart/form-data">
+                                
+                                <button type="submit" class="read_more_btn">Transcript & Summary</button>
+                              </form>
+                              <br>
+                              <!-- <form action="/summ" method="POST" enctype="multipart/form-data">
+                                <button type="submit" class="read_more_btn">Summary</button>
+                              </form> -->
+                          </div>
+                        </div>
+                        <div class="solution_card">
+                          <div class="hover_color_bubble"></div>
+                          <div class="solu_description">
+                            <P>Lecture id: 02</P>
+
+                            <video controls  width="300" height="150">
+                                <source src="/static/assets/ed2.mp4" type="video/mp4" >
+                              </video>
+                              
+                              <br><br>
+                              <form action="/trans" method="POST" enctype="multipart/form-data">
+                                
+                                <button type="submit" class="read_more_btn">Transcript & Summary</button>
+                              </form>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <!--  -->
+                      <div class="solution_cards_box">
+                        <div class="solution_card">
+                          <div class="hover_color_bubble"></div>
+                          <div class="solu_description">
+                            <P>Lecture id: 03</P>
+
+                            <video controls  width="300" height="150">
+                                <source src="/static/assets/ed3.mp4" type="video/mp4" >
+                              </video>
+                              
+                              <br><br>
+                              <form action="/trans" method="POST" enctype="multipart/form-data">
+                                
+                                <button type="submit" class="read_more_btn">Transcript & Summary</button>
+                              </form>
+                          </div>
+                        </div>
+                        <div class="solution_card">
+                          <div class="hover_color_bubble"></div>
+                          <div class="solu_description">
+                            <P>Lecture id: 04</P>
+
+                            <video controls  width="300" height="150">
+                                <source src="/static/assets/ed4.mp4" type="video/mp4" >
+                              </video>
+                              
+                              <br><br>
+                              <form action="/trans" method="POST" enctype="multipart/form-data">
+                                
+                                <button type="submit" class="read_more_btn">Transcript & Summary</button>
+                              </form>
+
+                          </div>
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+        </body>
+</html>

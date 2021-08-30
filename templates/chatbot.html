@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+ <html>
+
+    <head>
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+        <meta charset="utf-8">
+
+        <!-- Description, Keywords and Author -->
+
+        <meta name="description" content="">
+
+        <meta name="author" content="">
+
+        
+
+        <title> chatbot</title>
+
+
+
+   <!-- style -->
+
+   <link href="/static/assets/css/styles.css" rel="stylesheet" type="text/css">
+
+   <!-- style -->
+
+   <!-- bootstrap -->
+
+   <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+   <!-- responsive -->
+
+   <link href="/static/assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+   <!-- font-awesome -->
+
+   <link href="/static/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   <!-- font-awesome -->
+
+   <link href="/static/assets/css/effects/set2.css" rel="stylesheet" type="text/css">
+
+   <link href="/static/assets/css/effects/normalize.css" rel="stylesheet" type="text/css">
+
+   <link href="/static/assets/css/effects/component.css"  rel="stylesheet" type="text/css" >
+
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="/static/assets/css/style.css" rel="stylesheet"> -->
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.4.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    
+
+    <!-- header -->
+
+        <header role="header">
+
+            <div class="container">
+
+                <!-- logo -->
+
+                    <h1>
+
+                        <a href="/" title="avana LLC"><img src="/static/assets/img/logo.png" title="SMARTCLASS" alt="avana LLC"/></a>
+
+
+                    </h1>
+
+                <!-- logo -->
+
+                <!-- nav -->
+
+               
+
+                <!-- nav -->
+
+            </div>
+
+        </header>
+
+    <!-- header -->
+
+    <!-- main -->
+
+    <main role="main-home-wrapper" class="container">
+
+        
+
+        <div class="row">
+
+        
+
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+
+                <article role="pge-title-content">
+
+                    <header>
+
+                        <h2><span>NK here, </span>Your information provider.</h2>
+
+                    </header>
+
+
+                </article>
+
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+
+                <!-- <figure class="effect-oscar">
+
+                    <img src="/static/assets/img/image-2.jpg" alt="" class="img-responsive"/>
+
+                    <figcaption> -->
+
+                        <h1>I'll put with all your queries in here.</h1>
+                        <br>
+                        <hr>
+                        <br>
+                  
+                          <div class="row">
+                            <div class="col-lg-9">
+                              <input class="form-control" type="text" name="question" id="question">
+                            </div>
+                            <div class="col-lg-3">
+                              <button class="btn btn-primary btn-block" id="submit-button">Send</button>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col">
+                              <p id="response"></p>
+                            </div>
+                          </div>
+
+
+<!-- 
+                    </figcaption>
+                    
+                </figure> -->
+
+            </section>
+            </div>
+
+            </main>
+    <script src="/static/jquery.min.js" ></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+      jQuery(document).ready(function() {
+
+        $("#submit-button").click(function(e) {
+          e.preventDefault();
+
+
+          $.ajax({
+              type: "POST",
+              url: "/chatbot",
+              data: {
+                  question: $("#question").val()
+              },
+              success: function(result) {
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> SMARTCLASS: "+result.response);
+                $("#question").val("")
+              },
+              error: function(result) {
+                  alert('error');
+              }
+          });
+
+
+
+        });
+
+      });
+
+
+    </script>
+            </body>
+            </html>
