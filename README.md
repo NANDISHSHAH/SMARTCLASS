@@ -1,0 +1,2 @@
+# SMARTCLASS
+Hi everyone we have created a small prototype where we provide a multiple service like automatic feedback analysis of the lecture and the application apart from that we have also added a video based transcript and summary generator to understand about the lecture too navigate through the application we provide a chatbot also . For getting the audio from the video part and generating a transcript we have used Symbl api.
