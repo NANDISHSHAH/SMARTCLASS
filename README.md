@@ -11,3 +11,6 @@ Hi everyone we have created a small prototype where we provide a multiple servic
 *	Therein filling a form and based on the details filled the feedbacks sentiment will be analyzed and will provide a count for it being a positive or a negative feedback and the count will be updated in real-time and all the responses will be stored in our cloud database, MongoDB.
 *	Below the services section there is a The Team section providing information about the members and below that is a contacts section providing our contact details.
 ![](images/img1.png)
+Our Services
+![](images/img2.png)
+
