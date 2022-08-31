@@ -15,7 +15,7 @@ pos = 0
 neg = 0
 l=[]
 s=[]
-URI = "mongodb+srv://kadamsolanki:kadavani00@cluster0.a8two.mongodb.net/symbalfeed?retryWrites=true&w=majority"
+URI = "mongodb+srv://username:password@cluster0.a8two.mongodb.net/symbalfeed?retryWrites=true&w=majority"
 Client = pymongo.MongoClient(URI)
 db = Client['symbalfeed']
 app = Flask(__name__)
